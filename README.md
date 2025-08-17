@@ -1,2 +1,0 @@
-# curiouspdf
-A pdf reader
