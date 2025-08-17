@@ -1,13 +1,12 @@
 [Desktop Entry]
 Version=1.5
 Type=Application
-Name=PDF Opener
+Name=CuriousPDF
 Comment=Lightweight launcher that opens PDFs with your installed viewer
-Exec=pdf-opener %f
-TryExec=pdf-opener
-Icon=pdf-opener
+Exec=curiouspdf %f
+TryExec=curiouspdf
+Icon=curiouspdf
 Terminal=false
 Categories=Office;Utility;Viewer;
 StartupNotify=false
 MimeType=application/pdf;
-
