@@ -54,12 +54,12 @@ def interactive_picker():
         return 0
     code = launch_viewer(file_path)
     if code != 0:
-        messagebox.showerror("PDF Opener", "Could not launch a PDF viewer.")
+        messagebox.showerror("CuriousPDF", "Could not launch a PDF viewer.")
     return code
 
 def main():
     parser = argparse.ArgumentParser(
-        prog="pdf-opener",
+        prog="curiouspdf",
         description="A minimal desktop-friendly PDF opener/launcher for Linux."
     )
     parser.add_argument(
@@ -82,9 +82,8 @@ def main():
         if args.pick or sys.stdout.isatty():
             sys.exit(interactive_picker())
         else:
-            print("Usage: pdf-opener [--pick] [file.pdf]", file=sys.stderr)
+            print("Usage: curiouspdf [--pick] [file.pdf]", file=sys.stderr)
             sys.exit(2)
 
 if __name__ == "__main__":
     main()
-
